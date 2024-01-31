@@ -13,8 +13,8 @@ public class DishDBHelper extends SQLiteOpenHelper {
     //Database creation SQL statment
     private static final String CREATE_TABLE_INFO =
             "create table contact (_id integer primary key autoincrement), "
-            + "dishid text, name text, type text, "
-            + "rating text, restaurantid text);";
+            + "dishid int, name text, type text, "
+            + "rating text, restaurantid int);";
 
     public DishDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VER);

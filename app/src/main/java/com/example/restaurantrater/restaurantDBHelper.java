@@ -13,7 +13,7 @@ public class restaurantDBHelper extends SQLiteOpenHelper {
     //Database creation SQL statment
     private static final String CREATE_TABLE_INFO =
             "create table info (_id integer primary key autoincrement,"
-            + "restaurantid text not null, name text, "
+            + "restaurantid int not null, name text, "
             + "streetaddress text, city text, "
             + "state text, zipcode text;";
 
