@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editDishName" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/rgDishType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textDishType">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/entreeButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="6"
@@ -57,7 +57,7 @@
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/dessertButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="6"
@@ -73,7 +73,7 @@
         android:layout_marginTop="52dp"
         android:text="Rating:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/rgDishType" />
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -85,7 +85,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textRating" />
 
     <Button
-        android:id="@+id/saverating"
+        android:id="@+id/savebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="132dp"

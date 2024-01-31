@@ -2,23 +2,14 @@ package com.example.restaurantrater;
 
 public class dish {
 
-    private int restaurantid;
     private int dishid;
     private String name;
     private String type;
-    private String rating;
+    private float rating;
 
     public dish() {
-        restaurantid = -1;
+
         dishid = -1;
-    }
-
-    public int getRestaurantid() {
-        return restaurantid;
-    }
-
-    public void setRestaurantid(int restaurantid) {
-        this.restaurantid = restaurantid;
     }
 
     public int getDishid() {
@@ -45,11 +36,11 @@ public class dish {
         this.type = type;
     }
 
-    public String getRating() {
+    public float getRating() {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(float rating) {
         this.rating = rating;
     }
 }

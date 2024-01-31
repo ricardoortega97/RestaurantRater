@@ -13,10 +13,10 @@
         android:text="Restaurant:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.313" />
+        app:layout_constraintVertical_bias="0.067" />
 
     <TextView
         android:id="@+id/textAddress"
@@ -25,42 +25,45 @@
         android:text="Address:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/restauranName"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintTop_toBottomOf="@+id/editName"
+        app:layout_constraintVertical_bias="0.029" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/restauranName"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restauranName" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="412dp"
+        android:layout_marginBottom="472dp"
         android:ems="10"
 
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.626"
-        app:layout_constraintStart_toEndOf="@+id/textAddress" />
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAddress"
+        app:layout_constraintVertical_bias="0.217" />
 
     <Button
         android:id="@+id/rateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="360dp"
         android:text="Rate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textAddress" />
@@ -69,11 +72,76 @@
         android:id="@+id/Saved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="152dp"
         android:text="Saved"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/rateButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="City:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rateButton" />
+        app:layout_constraintTop_toBottomOf="@+id/editAddress" />
+
+    <EditText
+        android:id="@+id/editCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="State"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCity" />
+
+    <EditText
+        android:id="@+id/editState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:ems="5"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textState" />
+
+    <TextView
+        android:id="@+id/textZipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Zipcode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editState" />
+
+    <EditText
+        android:id="@+id/editZipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:ems="5"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textZipcode" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
