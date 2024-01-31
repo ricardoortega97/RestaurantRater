@@ -9,11 +9,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    private restaurant currentRestaurant;
+    private dish currentDish;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initRateButton();
+        currentRestaurant = new restaurant();
+        currentDish = new dish();
     }
     //initialize the rate button
     private void initRateButton(){
