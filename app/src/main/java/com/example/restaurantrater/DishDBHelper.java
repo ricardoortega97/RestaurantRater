@@ -10,16 +10,13 @@ public class DishDBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "dish.db";
     private static final int DATABASE_VER =  1;
     //Database creation SQL statment
-    private static final String CREATE_TABLE_DISH;
-
-    static {
-        CREATE_TABLE_DISH = "CREATE TABLE dish (" +
-                "_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "dishid INTEGER, " +
-                "name TEXT, " +
-                "type TEXT, " +
-                "rating REAL );";
-    }
+    private static final String CREATE_TABLE_DISH = "CREATE TABLE dish ("
+            +"_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+            +"dishid INTEGER, "
+            +"FOREIGN KEY (restaurantID) REFERENCES restaurant(restaurantID), " // Specify table and column
+            +"dishName TEXT, "
+            +"type TEXT, "
+            +"rating REAL );";
 
     public DishDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VER);

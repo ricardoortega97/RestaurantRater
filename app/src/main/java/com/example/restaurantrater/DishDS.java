@@ -30,7 +30,7 @@ public class DishDS {
             ContentValues initialValues = new ContentValues();
 
             initialValues.put("dishid", d.getDishid());
-            initialValues.put("name", d.getName());
+            initialValues.put("dishname", d.getName());
             initialValues.put("type", d.getType());
             initialValues.put("rating", d.getRating());
 
@@ -46,7 +46,7 @@ public class DishDS {
         try {
             long rowID = d.getDishid();
             ContentValues updateValues = new ContentValues();
-            updateValues.put("name", d.getName());
+            updateValues.put("dishname", d.getName());
             updateValues.put("type", d.getType());
             updateValues.put("rating", d.getRating());
 
